@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@400;500;600&display=swap');
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Open-Sans',sans-serif;
+}
+
+.container {
+   background-image: url(/asset/img/IMG_20230323_220624\ \(salin\).jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+header {
+   font-family: 'Oswald', sans-serif;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-right: 30px;
+   padding-left: 100px;
+   margin-bottom: 0;
+}
+
+header .title {
+   width: 120px;
+   background-color: rgba(141, 141, 141, 0.5);
+}
+
+header h1 {
+   font-size: 1.5em;
+   text-align: center;
+   padding: 2px;
+   color: #F8F9FA;
+}
+
+nav ul {
+   display: flex;
+   gap: 80px;
+   list-style: none;
+}
+
+nav ul :hover {
+   color: #ADB5BD;
+
+}
+
+nav ul a {
+   text-decoration: none;
+   font-size: 1em;
+   color: #F8F9FA;
+}
+
+
+
+.hero {
+   height: 565px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero h1 {
+   color: #F8F9FA;
+   font-family: 'Oswald';
+   font-size: 5em;
+   letter-spacing: 25px;
+}
