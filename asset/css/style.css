@@ -4,26 +4,32 @@ body {
    margin: 0;
    padding: 0;
    font-family: 'Open-Sans',sans-serif;
-   background-image: url(/asset/img/IMG_20230323_220624\ \(salin\).jpg);
-   background-size: cover;
-   background-position: center;
 }
 
 header {
+   background-image: url(/asset/img/IMG_20230323_220624\ \(salin\).jpg);
+   background-size: cover;
+   background-position: center;
+   height: 675px;
+   display: flex;
+   justify-content: center;
+}
+
+.container {
    font-family: 'Oswald', sans-serif;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-right: 30px;
-   padding-left: 100px;
+   position: fixed;
+   gap: 600px;
 }
 
-header .title {
+.container .title {
    width: 120px;
    background-color: rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
+.title h1 {
    font-size: 1.5em;
    text-align: center;
    padding: 2px;
@@ -47,25 +53,49 @@ nav ul a {
    text-decoration: none;
    font-size: 1em;
    color: #F8F9FA;
+   text-shadow: 4px 4px 3px #000000;
 }
 
-main {
-   height: 565px;
+header .hero {
    display: flex;
-   justify-content: center;
    align-items: center;
 }
 
-main h1 {
+header .hero h1 {
    color: #F8F9FA;
    font-family: 'Oswald';
    font-size: 5em;
    letter-spacing: 25px;
    background-color: rgba(0, 0, 0, 0.3);
    padding: 20px;
+   box-shadow: 5px 4px 5px #000000;
 }
 
-/*  */
+main section{
+   background-color: #000000;
+   color: #F8F9FA;
+   display: flex;
+   align-self: flex-start;
+   height: 675px;
+}
+
+main section article{
+   width: 50%;
+   padding: 10px 20px;
+   margin: auto;
+}
+
+main section figure{
+   width: 40%;
+   margin: auto;
+}
+
+main section img{
+   border-radius: 5px;
+   box-shadow: 4px 3px 8px #495057;
+}
+
+
 main aside {
    position: fixed;
    inset-block: 0;
@@ -82,7 +112,7 @@ main aside {
    margin: auto;
    border-top-left-radius: 12px;
    border-bottom-left-radius: 12px;
-   background-color: rgba(0, 0, 0, 0.2);
+   background-color: rgba(33, 37, 41, 0.2);
 
    display: flex;
    flex-flow: column nowrap;
