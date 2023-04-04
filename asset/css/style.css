@@ -76,6 +76,7 @@ main{
    color: #F8F9FA;
    display: flex;
    flex-direction: column;
+   padding-bottom: 80px;
 }
 
 main #about .content {
@@ -128,7 +129,6 @@ main #blog {
 }
 
 .container-blog {
-   position: relative;
    width: 100%;
    display: flex;
    justify-content: center;
@@ -137,7 +137,6 @@ main #blog {
 }
 
 .container-blog .cardblog  {
-   position: relative;
    width: 400px;
    height: 500px;
    background-color: #212529;
@@ -157,17 +156,16 @@ main #blog {
 }
 
 .container-blog .cardblog .isi {
-   position: absolute;
    padding: 20px;
-   text-align: center;
+   /* text-align: center; */
 }
 
 .container-blog .cardblog p {
-   color: #FFFFFF;
+   color: #ADB5BD;
+   font-size: .9em;
 }
 
 .container-blog .cardblog .isi a {
-   position: relative;
    display: inline-block;
    padding: 10px 20px;
    border-radius: 10px;
@@ -221,3 +219,30 @@ main aside {
  main aside .social-media a:hover {
    color: #ADB5BD;
  }
+
+ footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #212529;
+   padding: 20px 0;
+ }
+
+footer img {
+   border-radius: 100%;
+}
+
+footer h1 {
+   margin-top: 30px;
+   color: #FFFFFF;
+   font-family: 'Oswald';
+}
+
+footer li {
+   list-style-type: none;
+   color: #FFFFFF;
+}
+
+footer li a{
+   color: #FFFFFF;
+}
